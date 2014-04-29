@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}</title>
+  <meta name="author" lang="ru" content="Вильгельм Буш">
+  <meta name="copyright" lang="de" content="Christliche Literatur-Verbreitung" />
+
+  {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+  <link rel="canonical" href="{{ canonical }}">
+  <link href="{{ root_url }}/favicon.png" rel="icon">
+  <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+  <script src="{{ root_url }}/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="{{ root_url }}/javascripts/octopress.js" type="text/javascript"></script>
+  {% include custom/head.html %}
+  {% include google_analytics.html %}
+  <style type="text/css">
+    div.Tx {text-align: justify; width: 88%; margin-left: 6%;}
+    div.R {text-indent: 2em;}
+    div.Ep1 {position: relative; left: 60%; width: 40%; font-style: italic;font-weight: 700;}
+    div.Ep2 {text-align: right;}
+    h1, h2, h3, h4 {text-align: center;}
+    p.Wri {text-align: right; font-size: 110%;}
+    p.Sti {position: relative; left: 10%;}
+    ol {list-style: upper-roman inside;}
+    li {font-weight: bold; line-height: 2.0;}
+  </style>
+</head>

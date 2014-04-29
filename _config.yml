@@ -2,12 +2,89 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: https://www.google.com/search
-description:
+url: http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai
+title: Филипп Ригованов
+subtitle: <span class="role">христианин, преподаватель математики, программист,<br />разработчик мобильных &amp; веб приложений</span><br />from <span class="adr"><span class="locality">Novorossiysk, Russia</span></span><br /><br />For such a time as this<br />I was placed upon the earth<br />To hear the voice of God,<br />and do his will - whatever it is.
+author: Филипп Ригованов
+simple_search: http://google.com/search
+description: блог Филиппа Ригованова
+keywords: блог, Филипп, Ригованов
+site_lang: ru
+
+# Put &default in front of your dictionary
+
+ru: &default
+  comments: Комментарии
+  next_post: Следующая запись
+  prev_post: Предыдущая запись
+  older: Старые
+  newer: Новые
+  recent_posts: Последние записи
+  categories_list: Категории
+  on: на
+  posted_in: В категориях
+  posted_by: автор записки
+  excerpt_link: "Далее &rarr;"    
+  category_title_prefix: 'Категория : '                          
+  updated: Отредактировано
+  nav_about: О блоге
+  nav_archives: Архив
+  nav_categories: Категории
+  foot_powered_by: Сделано с помощью
+  search: Поиск
+  subRss: Подписаться на RSS
+  sub_email: Подписаться по email
+  find_me: Найдите меня
+  license_text: Данная работа под лицензией
+  loading: Загрузка...
+  twitter_follow: Подписаться в Twitter
+  twitter_latest: Последние твиты
+  pinboard_text: Мои любимые закладки Pinboard &raquo;
+  google_plus_text: Профиль Google+
+  delicious_text: Мои любимые Delicious &raquo;
+  resume_text: Резюме
+  amazon_text: Книги
+  disqus_powered: комментарии Disqus
+  disqus_js_text: Пожалуйста включите JavaScript для того чтобы увидеть
+
+en:
+  comments: Comments
+  next_post: Next
+  prev_post: Previous
+  older: Older
+  newer: Newer
+  recent_posts: Recent posts
+  categories_list: Categories
+  on: on
+  posted_in: posted in
+  posted_by: Posted by
+  excerpt_link: "More &rarr;"  
+  category_title_prefix: 'Category: '
+  updated: Updated
+  nav_about: About
+  nav_archives: Archive
+  nav_categories: Categories
+  foot_powered_by: Powered by
+  search: Search
+  sub_rss: subscribe via RSS
+  sub_email: subscribe via email
+  find_me: Find me on
+  license_text: This work is licensed under a
+  loading: Loading...
+  twitter_follow: Follow
+  twitter_latest: Latest Tweets
+  pinboard_text: My Pinboard Bookmarks &raquo;
+  google_plus_text: Google+ Profile
+  delicious_text: My Pinboard Bookmarks &raquo;
+  resume_text: Resume
+  amazon_text: Books reviewed
+  disqus_powered: comments powered by Disqus
+  disqus_js_text: Please enable JavaScript to view the
+
+# Don't touch it
+i18n:
+  <<: *default
+
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -44,7 +121,7 @@ pygments: false # default python pygments have been replaced by pygments.rb
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "Далее &rarr;" # "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -63,17 +140,17 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: a1ip
+github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: phil_rigovanov
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -90,11 +167,14 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: a1ip
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-26406005-4
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
+
+# Vk Like
+vk_like: true

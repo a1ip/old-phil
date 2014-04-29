@@ -1,0 +1,7 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include bush_head.html %}
+<body>
+      {{ content | expand_urls: root_url }}
+  {% include after_footer.html %}
+</body>
+</html>
