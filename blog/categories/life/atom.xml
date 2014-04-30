@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Филипп Ригованов]]></title>
-  <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Life | Филипп Ригованов]]></title>
+  <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/categories/life/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
   <updated>2014-04-30T18:55:51+04:00</updated>
-  <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/</id>
+  <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
     
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Hello World!]]></title>
     <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/hello-world/"/>
     <updated>2014-04-30T18:51:27+04:00</updated>
-    <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/blog/2014/04/30/hello-world</id>
+    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/hello-world</id>
     <content type="html"><![CDATA[<h1>Hello World!</h1>
 ]]></content>
   </entry>
