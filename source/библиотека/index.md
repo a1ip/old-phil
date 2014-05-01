@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Чтиво"
+title: "Библиотека"
 date: 2014-04-29 12:58
 comments: true
 sharing: true
