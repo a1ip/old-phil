@@ -1,13 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>
-            http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/05/06/page-build-failed/
-        </loc>
-        <lastmod>2014-05-06T12:34:35+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/archives/</loc>
+        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed</loc>
         <lastmod>2014-05-06T12:34:35+04:00</lastmod>
     </url>
     <url>
@@ -21,6 +15,10 @@
     <url>
         <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/библиотека/</loc>
         <lastmod>2014-05-01T16:56:38+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/блог/архив/</loc>
+        <lastmod>2014-05-06T12:34:35+04:00</lastmod>
     </url>
     <url>
         <loc>
