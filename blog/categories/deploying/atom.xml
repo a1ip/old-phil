@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Deploying | Филипп Ригованов]]></title>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/categories/deploying/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
-  <updated>2014-05-06T12:23:56+04:00</updated>
+  <updated>2014-05-06T12:29:24+04:00</updated>
   <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
@@ -18,7 +18,7 @@
     <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/page-build-failed/"/>
     <updated>2014-04-30T18:51:27+04:00</updated>
     <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/page-build-failed</id>
-    <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с деплоем блога на github:</p>
+    <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с размещением блога на <a href="https://pages.github.com/">Github Pages</a>:</p>
 
 <blockquote><p>The page build failed with the following error:</p>
 
