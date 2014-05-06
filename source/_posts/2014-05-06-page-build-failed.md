@@ -6,7 +6,7 @@ comments: true
 categories: [ruby, octopress, jekyll, deploying, rake,Github Pages]
 ---
 
-В какой-то момент у меня возникли проблемы с деплоем блога на github:
+В какой-то момент у меня возникли проблемы с размещением блога на [Github Pages](https://pages.github.com/):
 
 >The page build failed with the following error:
 >
