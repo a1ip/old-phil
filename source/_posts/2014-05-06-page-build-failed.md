@@ -12,4 +12,4 @@ categories: [ruby, octopress, jekyll, deploying, rake,Github Pages]
 >
 >Page build failed.
 
-спасибо статье http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/ проблема решилась закомментированием строчки ``require "bundler/setup"`` в файле ``Rakefile``.
+спасибо статье [Adventures in Ruby](http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/) проблема решилась закомментированием строчки ``require "bundler/setup"`` в файле ``Rakefile``.
