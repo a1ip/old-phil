@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Page build failed"
-date: 2014-04-30 18:51:27 +0400
+date: 2014-05-06 12:34:27 +0400
 comments: true
 categories: [ruby, octopress, jekyll, deploying, rake,Github Pages]
 ---
