@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Филипп Ригованов]]></title>
-  <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress, | Филипп Ригованов]]></title>
+  <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
   <updated>2014-05-06T12:17:47+04:00</updated>
-  <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/</id>
+  <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
     
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Page Build Failed]]></title>
     <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/page-build-failed/"/>
     <updated>2014-04-30T18:51:27+04:00</updated>
-    <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/blog/2014/04/30/page-build-failed</id>
+    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/page-build-failed</id>
     <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с деплоем блога на github:</p>
 
 <blockquote><p>The page build failed with the following error:</p>
