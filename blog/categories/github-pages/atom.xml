@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github Pages | Филипп Ригованов]]></title>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/categories/github-pages/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
-  <updated>2014-05-06T12:33:38+04:00</updated>
+  <updated>2014-05-06T12:34:46+04:00</updated>
   <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Page Build Failed]]></title>
-    <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/page-build-failed/"/>
-    <updated>2014-04-30T18:51:27+04:00</updated>
-    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/04/30/page-build-failed</id>
+    <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/05/06/page-build-failed/"/>
+    <updated>2014-05-06T12:34:27+04:00</updated>
+    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/2014/05/06/page-build-failed</id>
     <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с размещением блога на <a href="https://pages.github.com/">Github Pages</a>:</p>
 
 <blockquote><p>The page build failed with the following error:</p>
