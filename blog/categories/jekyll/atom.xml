@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Jekyll | Филипп Ригованов]]></title>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
-  <updated>2014-05-06T12:29:24+04:00</updated>
+  <updated>2014-05-06T12:31:50+04:00</updated>
   <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
@@ -24,7 +24,7 @@
 
 <p>Page build failed.</p></blockquote>
 
-<p>спасибо статье <a href="http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/">http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/</a> проблема решилась закомментированием строчки <code>require "bundler/setup"</code> в файле <code>Rakefile</code>.</p>
+<p>спасибо статье <a href="http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/">Adventures in Ruby</a> проблема решилась закомментированием строчки <code>require "bundler/setup"</code> в файле <code>Rakefile</code>.</p>
 ]]></content>
   </entry>
   
