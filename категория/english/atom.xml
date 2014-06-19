@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Филипп Ригованов]]></title>
-  <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/atom.xml" rel="self"/>
+  <title><![CDATA[Category: English | Филипп Ригованов]]></title>
+  <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/категория/english/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
   <updated>2014-06-20T03:32:09+04:00</updated>
-  <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/</id>
+  <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
     
@@ -17,42 +17,19 @@
     <title type="html"><![CDATA[CodeCombat Solutions]]></title>
     <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/codecombat-solutions"/>
     <updated>2014-06-19T22:23:06+04:00</updated>
-    <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/codecombat-solutions</id>
-    <content type="html"><![CDATA[<div><script src='https://gist.github.com/c5551df1b1024ada8a00.js'></script>
+    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/codecombat-solutions</id>
+    <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/c5551df1b1024ada8a00.js'></script>
 <noscript><pre><code>##[Beginner Campaign](http://codecombat.com/play/level/rescue-mission)
 ######... in which you learn the wizardry of programming.</code></pre></noscript></div>
-
-
-
 
 <div><script src='https://gist.github.com/6d3e7cf0c39b21c25e22.js'></script>
 <noscript><pre><code>##[Random Harder Levels](http://codecombat.com/play/level/hunter-triplets)
 ######... in which you learn the interface while doing something a little harder.</code></pre></noscript></div>
 
-
-
-
 <div><script src='https://gist.github.com/2a89de59f88d8325d67d.js'></script>
 <noscript><pre><code>##[Player-Created Levels](http://codecombat.com/play/level/extra-extrapolation)
 ######... in which you battle against the creativity of your fellow [Artisan Wizards](http://codecombat.com/contribute#artisan).</code></pre></noscript></div>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Page Build Failed]]></title>
-    <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed"/>
-    <updated>2014-05-06T12:34:27+04:00</updated>
-    <id>http://xn&#8211;h1aairaz.xn&#8211;80adbby7aedl.xn&#8211;p1ai/page-build-failed</id>
-    <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с размещением блога на <a href="https://pages.github.com/">Github Pages</a>:</p>
-
-<blockquote><p>The page build failed with the following error:</p>
-
-<p>Page build failed.</p></blockquote>
-
-<p>Благодарю автора статьи <a href="http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/">Adventures in Ruby</a>, проблема решилась закомментированием строчки <code>require "bundler/setup"</code> в файле <code>Rakefile</code>.</p>
+</p>
 ]]></content>
   </entry>
   
