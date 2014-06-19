@@ -14,7 +14,13 @@
 //$footer-bg-front: image-url('noise.png');
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
 
-
+/* To change the color of the code markers, uncomment and change the following lines */
+/* 
+$marker:        rgba(#00baff, .5);
+$marker-bg:     rgba($marker, .03);
+$marker-border: rgba($marker, .13);
+$marker-border-left:   $marker;
+ */
 /* To use the light Solarized highlighting theme uncomment the following line */
 //$solarized: light;
 
