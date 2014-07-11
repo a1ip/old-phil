@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Филипп Ригованов]]></title>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/категория/octopress/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
-  <updated>2014-07-11T16:47:52+04:00</updated>
+  <updated>2014-07-11T16:53:41+04:00</updated>
   <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
@@ -30,11 +30,11 @@
 
 <p>Tasks: TOP => copydot</p></blockquote>
 
-<p>Проблема решается например добавлением <code>, "**/*.swp"</code> в файле <code>Rakefile</code>.
+<p>Проблема решается например добавлением <code>, "**/*.swp*"</code> в файле <code>Rakefile</code>.
 ``` ruby Rakefile
 desc &ldquo;copy dot files for deployment&rdquo;
 task :copydot, :source, :dest do |t, args|
-  FileList[&ldquo;#{args.source}/<strong>/.*&rdquo;].exclude(&ldquo;</strong>/.&rdquo;, &ldquo;<strong>/..&rdquo;, &ldquo;</strong>/.DS_Store&rdquo;, &ldquo;<strong>/._*&rdquo;, &ldquo;</strong>/*.swp&rdquo;).each do |file|</p>
+  FileList[&ldquo;#{args.source}/<strong>/.*&rdquo;].exclude(&ldquo;</strong>/.&rdquo;, &ldquo;<strong>/..&rdquo;, &ldquo;</strong>/.DS_Store&rdquo;, &ldquo;<strong>/._*&rdquo;, &ldquo;</strong>/.<em>.swp</em>&rdquo;).each do |file|</p>
 
 <pre><code>cp_r file, file.gsub(/#{args.source}/, "#{args.dest}") unless File.directory?(file)
 </code></pre>
