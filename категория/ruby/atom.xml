@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Филипп Ригованов]]></title>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/категория/ruby/atom.xml" rel="self"/>
   <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/"/>
-  <updated>2014-06-20T03:32:09+04:00</updated>
+  <updated>2014-07-11T14:37:36+04:00</updated>
   <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</id>
   <author>
     <name><![CDATA[Филипп Ригованов]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Page Build Failed]]></title>
-    <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed"/>
+    <title type="html"><![CDATA[Page Build Failed During Octopress Deploy]]></title>
+    <link href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy"/>
     <updated>2014-05-06T12:34:27+04:00</updated>
-    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed</id>
-    <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с размещением блога на <a href="https://pages.github.com/">Github Pages</a>:</p>
+    <id>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy</id>
+    <content type="html"><![CDATA[<p>В какой-то момент у меня возникли проблемы с размещением моего <em>powered by Octoress</em> блога на <a href="https://pages.github.com/">Github Pages</a>:</p>
 
 <blockquote><p>The page build failed with the following error:</p>
 
