@@ -6,7 +6,7 @@ comments: true
 categories: [error, ruby, octopress, jekyll, deploying, rake, Github Pages]
 ---
 
-В какой-то момент у меня возникли проблемы с размещением моего _powered by Octoress_ блога на [Github Pages](https://pages.github.com/):
+В какой-то момент у меня возникли проблемы с размещением моего [powered by Octopress](http://octopress.org) блога на [Github Pages](https://pages.github.com/):
 
 >The page build failed with the following error:
 >
