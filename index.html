@@ -9,8 +9,7 @@
   <meta name="author" content="Филипп Ригованов">
 
   
-  <meta name="description" content="##[Beginner Campaign](http://codecombat.com/play/level/rescue-mission)
-######... in which you learn the wizardry of programming. ##[Random Harder &hellip;">
+  <meta name="description" content="Я пользуюсь редактором Vim для того чтобы писать в своём блоге powered by Octopress. У меня вылезла ошибка связанная с тем, что copydot не игнорирует &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +80,71 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/rake-aborted-with-swp-during-octopress-deploy">Page Build Failed During Octopress Deploy</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-11T12:34:27+04:00" pubdate class="updated" data-updated="true">Пятница, 11 Июля 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Я пользуюсь редактором <a href="http://www.vim.org">Vim</a> для того чтобы писать в своём блоге <a href="http://octopress.org">powered by Octopress</a>.</p>
+
+<p>У меня вылезла ошибка связанная с тем, что <code>copydot</code> не игнорирует <code>.swp</code> файлы временных копий для <em>vim</em>:</p>
+
+<blockquote><p>cp -r source/<em>posts/.2014-05-06-page.md.swp public/</em>posts/.2014-05-06-page.md.swp</p>
+
+<p>rake aborted!</p>
+
+<p>No such file or directory @ rb_sysopen &ndash; public/_posts/.2014-05-06-page.md.swp</p>
+
+<p>Tasks: TOP => copydot</p></blockquote>
+
+<p>Проблема решается например добавлением <code>, "**/*.swp"</code> в файле <code>Rakefile</code>.</p>
+
+<figure class='code'><figcaption><span>Rakefile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">desc</span> <span class="s2">&quot;copy dot files for deployment&quot;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:copydot</span><span class="p">,</span> <span class="ss">:source</span><span class="p">,</span> <span class="ss">:dest</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="p">,</span> <span class="n">args</span><span class="o">|</span>
+</span><span class='line'>  <span class="no">FileList</span><span class="o">[</span><span class="s2">&quot;</span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">/**/.*&quot;</span><span class="o">].</span><span class="n">exclude</span><span class="p">(</span><span class="s2">&quot;**/.&quot;</span><span class="p">,</span> <span class="s2">&quot;**/..&quot;</span><span class="p">,</span> <span class="s2">&quot;**/.DS_Store&quot;</span><span class="p">,</span> <span class="s2">&quot;**/._*&quot;</span><span class="p">,</span> <span class="s2">&quot;**/*.swp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">file</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">cp_r</span> <span class="n">file</span><span class="p">,</span> <span class="n">file</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/</span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="sr">/</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">dest</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">unless</span> <span class="no">File</span><span class="o">.</span><span class="n">directory?</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -190,6 +254,10 @@
     <section>
   <h1>Последние записи</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/rake-aborted-with-swp-during-octopress-deploy">Page Build Failed During Octopress Deploy</a>
+      </li>
     
       <li class="post">
         <a href="/codecombat-solutions">CodeCombat Solutions</a>

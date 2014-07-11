@@ -9,7 +9,7 @@
   <meta name="author" content="Филипп Ригованов">
 
   
-  <meta name="description" content="В какой-то момент у меня возникли проблемы с размещением моего powered by Octopress блога на Github Pages: The page build failed with the following &hellip;">
+  <meta name="description" content="Я пользуюсь редактором Vim для того чтобы писать в своём блоге powered by Octopress. У меня вылезла ошибка связанная с тем, что copydot не игнорирует &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy">
+  <link rel="canonical" href="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/rake-aborted-with-swp-during-octopress-deploy">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Филипп Ригованов" type="application/atom+xml">
@@ -99,20 +99,43 @@
   
 
 
-<time datetime="2014-05-06T12:34:27+04:00" pubdate class="updated" data-updated="true">Вторник,  6 Мая 2014</time>
+<time datetime="2014-07-11T12:34:27+04:00" pubdate class="updated" data-updated="true">Пятница, 11 Июля 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>В какой-то момент у меня возникли проблемы с размещением моего <a href="http://octopress.org">powered by Octopress</a> блога на <a href="https://pages.github.com/">Github Pages</a>:</p>
+<div class="entry-content"><p>Я пользуюсь редактором <a href="http://www.vim.org">Vim</a> для того чтобы писать в своём блоге <a href="http://octopress.org">powered by Octopress</a>.</p>
 
-<blockquote><p>The page build failed with the following error:</p>
+<p>У меня вылезла ошибка связанная с тем, что <code>copydot</code> не игнорирует <code>.swp</code> файлы временных копий для <em>vim</em>:</p>
 
-<p>Page build failed.</p></blockquote>
+<blockquote><p>cp -r source/<em>posts/.2014-05-06-page.md.swp public/</em>posts/.2014-05-06-page.md.swp</p>
 
-<p>Благодарю автора статьи <a href="http://warewolf.github.io/blog/2013/04/28/adventures-in-ruby/">Adventures in Ruby</a>, проблема решилась закомментированием строчки <code>require "bundler/setup"</code> в файле <code>Rakefile</code>.</p>
+<p>rake aborted!</p>
+
+<p>No such file or directory @ rb_sysopen &ndash; public/_posts/.2014-05-06-page.md.swp</p>
+
+<p>Tasks: TOP => copydot</p></blockquote>
+
+<p>Проблема решается например добавлением <code>, "**/*.swp"</code> в файле <code>Rakefile</code>.</p>
+
+<figure class='code'><figcaption><span>Rakefile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">desc</span> <span class="s2">&quot;copy dot files for deployment&quot;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:copydot</span><span class="p">,</span> <span class="ss">:source</span><span class="p">,</span> <span class="ss">:dest</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="p">,</span> <span class="n">args</span><span class="o">|</span>
+</span><span class='line'>  <span class="no">FileList</span><span class="o">[</span><span class="s2">&quot;</span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">/**/.*&quot;</span><span class="o">].</span><span class="n">exclude</span><span class="p">(</span><span class="s2">&quot;**/.&quot;</span><span class="p">,</span> <span class="s2">&quot;**/..&quot;</span><span class="p">,</span> <span class="s2">&quot;**/.DS_Store&quot;</span><span class="p">,</span> <span class="s2">&quot;**/._*&quot;</span><span class="p">,</span> <span class="s2">&quot;**/*.swp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">file</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">cp_r</span> <span class="n">file</span><span class="p">,</span> <span class="n">file</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/</span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="sr">/</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">dest</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">unless</span> <span class="no">File</span><span class="o">.</span><span class="n">directory?</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 </div>
 
 
@@ -135,12 +158,12 @@
   
 
 
-<time datetime="2014-05-06T12:34:27+04:00" pubdate class="updated" data-updated="true">Вторник,  6 Мая 2014</time>
+<time datetime="2014-07-11T12:34:27+04:00" pubdate class="updated" data-updated="true">Пятница, 11 Июля 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/категория/github-pages/'>Github Pages</a>, <a class='category' href='/категория/deploying/'>deploying</a>, <a class='category' href='/категория/error/'>error</a>, <a class='category' href='/категория/octopress/'>octopress</a>, <a class='category' href='/категория/rake/'>rake</a>, <a class='category' href='/категория/ruby/'>ruby</a>
+    <a class='category' href='/категория/deploying/'>deploying</a>, <a class='category' href='/категория/error/'>error</a>, <a class='category' href='/категория/octopress/'>octopress</a>, <a class='category' href='/категория/rake/'>rake</a>, <a class='category' href='/категория/ruby/'>ruby</a>, <a class='category' href='/категория/vim/'>vim</a>
   
 </span>
 
@@ -149,7 +172,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy" data-via="phil_rigovanov" data-counturl="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/rake-aborted-with-swp-during-octopress-deploy" data-via="phil_rigovanov" data-counturl="http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/rake-aborted-with-swp-during-octopress-deploy" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -165,8 +188,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/codecombat-solutions" title="Предыдущая запись: CodeCombat solutions">&laquo; CodeCombat solutions</a>
       
-        <a class="basic-alignment right" href="/codecombat-solutions" title="Следующая запись: CodeCombat solutions">CodeCombat solutions &raquo;</a>
       
     </p>
   </footer>
@@ -258,8 +281,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy';
-        var disqus_url = 'http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy';
+        var disqus_identifier = 'http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/rake-aborted-with-swp-during-octopress-deploy';
+        var disqus_url = 'http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/rake-aborted-with-swp-during-octopress-deploy';
         var disqus_script = 'embed.js';
       
     (function () {
