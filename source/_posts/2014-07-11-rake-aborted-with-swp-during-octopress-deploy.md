@@ -18,7 +18,7 @@ categories: [error, ruby, octopress, deploying, rake, vim]
 >
 >Tasks: TOP => copydot
 
-Проблема решается например добавлением ``, "**/*.swp*"`` в файле ``Rakefile``.
+Проблема решается например добавлением ``, "**/.*.swp*"`` в файле ``Rakefile``.
 ``` ruby Rakefile
 desc "copy dot files for deployment"
 task :copydot, :source, :dest do |t, args|
