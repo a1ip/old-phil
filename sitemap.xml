@@ -2,66 +2,66 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/page-build-failed-during-octopress-deploy
+            http://phil.rigovanov.ru/page-build-failed-during-octopress-deploy
         </loc>
         <lastmod>2014-07-11T15:10:40+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/codecombat-solutions</loc>
+        <loc>http://phil.rigovanov.ru/codecombat-solutions</loc>
         <lastmod>2014-10-09T12:51:29+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/rake-aborted-with-swp-during-octopress-deploy
+            http://phil.rigovanov.ru/rake-aborted-with-swp-during-octopress-deploy
         </loc>
         <lastmod>2014-07-11T16:57:17+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/</loc>
+        <loc>http://phil.rigovanov.ru/</loc>
         <lastmod>2014-07-11T16:57:17+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/robots.txt</loc>
+        <loc>http://phil.rigovanov.ru/robots.txt</loc>
         <lastmod>2014-04-29T18:20:56+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/библиотека/</loc>
+        <loc>http://phil.rigovanov.ru/библиотека/</loc>
         <lastmod>2014-05-13T15:29:41+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/блог/архив/</loc>
+        <loc>http://phil.rigovanov.ru/блог/архив/</loc>
         <lastmod>2014-07-11T16:57:17+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/В-стране-солнца/</loc>
-        <lastmod>2014-07-11T16:57:17+04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/Грешники-в-руках-разгневанного-Бога/
-        </loc>
-        <lastmod>2014-04-29T17:53:41+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/Иисус-наша-судьба/</loc>
-        <lastmod>2014-07-11T16:57:17+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/Кадетский-монастырь/</loc>
-        <lastmod>2014-07-11T16:57:17+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/Маленький-принц/</loc>
+        <loc>http://phil.rigovanov.ru/В-стране-солнца/</loc>
         <lastmod>2014-07-11T16:57:17+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/Путешествие-Пилигрима-в-Небесную-страну/
+            http://phil.rigovanov.ru/Грешники-в-руках-разгневанного-Бога/
         </loc>
         <lastmod>2014-04-29T17:53:41+04:00</lastmod>
     </url>
     <url>
-        <loc>http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/Человек-или-кролик/</loc>
+        <loc>http://phil.rigovanov.ru/Иисус-наша-судьба/</loc>
+        <lastmod>2014-07-11T16:57:17+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://phil.rigovanov.ru/Кадетский-монастырь/</loc>
+        <lastmod>2014-07-11T16:57:17+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://phil.rigovanov.ru/Маленький-принц/</loc>
+        <lastmod>2014-07-11T16:57:17+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://phil.rigovanov.ru/Путешествие-Пилигрима-в-Небесную-страну/
+        </loc>
+        <lastmod>2014-04-29T17:53:41+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://phil.rigovanov.ru/Человек-или-кролик/</loc>
         <lastmod>2014-05-07T11:59:00+04:00</lastmod>
     </url>
 </urlset>
