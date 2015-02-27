@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://xn--h1aairaz.xn--80adbby7aedl.xn--p1ai/sitemap.xml 
+Sitemap: http://phil.rigovanov.ru/sitemap.xml 
